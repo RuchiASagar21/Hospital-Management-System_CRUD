@@ -4,7 +4,10 @@
  */
 package Emp_GUI;
 
+import directory.EmpData;
 import directory.EmpDataHis;
+import java.text.SimpleDateFormat;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -48,13 +51,13 @@ public class Create_JPanel extends javax.swing.JPanel {
         txtEmpID = new javax.swing.JTextField();
         txtAge = new javax.swing.JTextField();
         txtGender = new javax.swing.JTextField();
-        txtStartDate = new javax.swing.JTextField();
         txtLevel = new javax.swing.JTextField();
         txtTeamInfo = new javax.swing.JTextField();
         txtPositionTitle = new javax.swing.JTextField();
         txtContactNo = new javax.swing.JTextField();
         txtEmailID = new javax.swing.JTextField();
         txtEmpPhoto = new javax.swing.JTextField();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel2.setText("Name");
@@ -157,9 +160,9 @@ public class Create_JPanel extends javax.swing.JPanel {
                             .addComponent(txtEmpID)
                             .addComponent(txtAge)
                             .addComponent(txtGender)
-                            .addComponent(txtStartDate)
                             .addComponent(txtName)
-                            .addComponent(txtLevel, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)))
+                            .addComponent(txtLevel, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
+                            .addComponent(jDateChooser1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(58, 58, 58)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -205,14 +208,10 @@ public class Create_JPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(8, 8, 8)
+                .addGap(10, 10, 10)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtStartDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
@@ -275,18 +274,62 @@ public class Create_JPanel extends javax.swing.JPanel {
         int empId = Integer.parseInt(txtEmpID.getText());
         int age = Integer.parseInt(txtAge.getText());
         String gender = txtGender.getText();
-        int date = Integer.parseInt(txtStartDate.getText());
-        int level = Integer.parseInt(txtLevel.getText());
+        SimpleDateFormat d = new SimpleDateFormat("MM-dd-yyyy");
+        String date = d.format(jDateChooser1.getDate());
+        String level = txtLevel.getText();
         String teamInfo = txtTeamInfo.getText();
         String positionTitle = txtPositionTitle.getText();
-        int phoneNo = Integer.parseInt(txtContactNo.getText());
+        String phoneNo = txtContactNo.getText();
         String emailAdd = txtEmailID.getText();
         String empPhoto = txtEmpPhoto.getText();
+        
+        EmpData vs = history.addNewEmp();
+        vs.setName(name);
+        vs.setEmpId(empId);
+        vs.setAge(age);
+        vs.setGender(gender);
+        vs.setDate(date);
+        vs.setLevel(level);
+        vs.setTeamInfo(teamInfo);
+        vs.setPositionTitle(positionTitle);
+        vs.setPhoneNo(phoneNo);
+        vs.setEmailAdd(emailAdd);
+        vs.setEmpPhoto(empPhoto);
+        
+        JOptionPane.showMessageDialog(this,"Emp Data has been saved" );
+        
+        txtName.setText("");
+        txtEmpID.setText("");
+         txtAge.setText("");
+          txtGender.setText("");
+           jDateChooser1.setDate(null);
+           txtLevel.setText("");
+            txtTeamInfo.setText("");
+             txtPositionTitle.setText("");
+              txtContactNo.setText("");
+               txtEmailID.setText("");
+                txtEmpPhoto.setText("");
+                
+               
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -308,7 +351,6 @@ public class Create_JPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtLevel;
     private javax.swing.JTextField txtName;
     private javax.swing.JTextField txtPositionTitle;
-    private javax.swing.JTextField txtStartDate;
     private javax.swing.JTextField txtTeamInfo;
     // End of variables declaration//GEN-END:variables
 }

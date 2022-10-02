@@ -24,5 +24,12 @@ public class EmpDataHis {
     public void setHistory(ArrayList<EmpData> history) {
         this.history = history;
     }
-   
+   public EmpData addNewEmp(){
+    EmpData newEmp = new EmpData();
+      history.add(newEmp); 
+      return newEmp;
+   }
+       public void deletedata(EmpData vs){
+           history.remove(vs);
+       }
 }

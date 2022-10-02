@@ -13,11 +13,11 @@ public class EmpData {
     private int empId;
     private int age;
     private String gender;
-    private int date;
-    private int level;
+    private String date;
+    private String level;
     private String teamInfo;
     private String positionTitle;
-    private int phoneNo;
+    private String phoneNo;
     private String emailAdd;
     private String empPhoto;
 
@@ -53,19 +53,19 @@ public class EmpData {
         this.gender = gender;
     }
 
-    public int getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public int getLevel() {
+    public String getLevel() {
         return level;
     }
 
-    public void setLevel(int level) {
+    public void setLevel(String level) {
         this.level = level;
     }
 
@@ -85,11 +85,11 @@ public class EmpData {
         this.positionTitle = positionTitle;
     }
 
-    public int getPhoneNo() {
+    public String getPhoneNo() {
         return phoneNo;
     }
 
-    public void setPhoneNo(int phoneNo) {
+    public void setPhoneNo(String phoneNo) {
         this.phoneNo = phoneNo;
     }
 
@@ -109,8 +109,12 @@ public class EmpData {
         this.empPhoto = empPhoto;
     }
 
-    
-    
+    @Override
+    public String toString() {
+        return name;
+        
+        
+    }
     
     
 }
