@@ -4,6 +4,9 @@
  */
 package ui;
 
+import model.PatientDirectory;
+import model.PersonDirectory;
+
 /**
  *
  * @author Ruchi Anand Sagar
@@ -13,8 +16,13 @@ public class SystemAdmin extends javax.swing.JFrame {
     /**
      * Creates new form Save
      */
-    public SystemAdmin() {
+    PersonDirectory personHistory;
+PatientDirectory patientHistory;
+        
+    public SystemAdmin(PersonDirectory personHistory,PatientDirectory patientHistory) {
         initComponents();
+        this.personHistory=personHistory;
+        this.patientHistory=patientHistory;
     }
 
     /**

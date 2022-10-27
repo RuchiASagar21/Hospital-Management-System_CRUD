@@ -119,6 +119,10 @@ public class Patient {
         this.symptoms = symptoms;
     }
 
+    @Override
+    public String toString(){
+        return name;
+    }
     
     
     

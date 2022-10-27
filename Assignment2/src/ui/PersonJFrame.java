@@ -21,9 +21,10 @@ public class PersonJFrame extends javax.swing.JFrame {
      PatientDirectory patientHistory;
     PersonDirectory personHistory;
     String gender;
-    public PersonJFrame(PersonDirectory personHistory) {
+    public PersonJFrame(PersonDirectory personHistory,PatientDirectory patientHistory) {
         initComponents();
           this.personHistory=personHistory;
+          this.patientHistory=patientHistory;
     }
 
     /**

@@ -3,11 +3,35 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package model;
+import java.util.*;
+import model.Patient;
 
 /**
  *
  * @author Ruchi Anand Sagar
  */
 public class PatientDirectory {
-    
+    private ArrayList<Patient>patientHistory;
+
+    public PatientDirectory() {
+        this.patientHistory=new ArrayList<Patient>();
+    }
+
+    public ArrayList<Patient> getPatientHistory() {
+        return patientHistory;
+    }
+
+    public void setPatientHistory(ArrayList<Patient> patientHistory) {
+        this.patientHistory = patientHistory;
+    }
+
+   
+    public Patient addNewPatient(){
+        Patient newPatient= new Patient();
+        patientHistory.add(newPatient);
+        return newPatient;
+    }
+    public void deletePatient(Patient pa){
+        patientHistory.remove(pa);
+    }  
 }

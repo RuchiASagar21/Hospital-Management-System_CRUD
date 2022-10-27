@@ -69,7 +69,7 @@ PersonDirectory personHistory;
         emergencytxtpd = new javax.swing.JTextField();
         medicaltxtpd = new javax.swing.JTextField();
         symptomstxtpd = new javax.swing.JTextField();
-        backbtnpd = new javax.swing.JButton();
+        backbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -138,10 +138,10 @@ PersonDirectory personHistory;
             }
         });
 
-        backbtnpd.setText("Back");
-        backbtnpd.addActionListener(new java.awt.event.ActionListener() {
+        backbtn.setText("back");
+        backbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backbtnpdActionPerformed(evt);
+                backbtnActionPerformed(evt);
             }
         });
 
@@ -205,16 +205,16 @@ PersonDirectory personHistory;
                         .addGap(227, 227, 227)))
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(backbtnpd)
+                .addGap(28, 28, 28)
+                .addComponent(backbtn)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(backbtnpd)
-                .addGap(46, 46, 46)
+                .addGap(20, 20, 20)
+                .addComponent(backbtn)
+                .addGap(44, 44, 44)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -305,6 +305,7 @@ PersonDirectory personHistory;
         symptomstxtpd.setText(selectedPatient.getSymptoms());
 
     }//GEN-LAST:event_viewbtnpdActionPerformed
+
  private void backbtnpdActionPerformed(java.awt.event.ActionEvent evt) {                                          
         // TODO add your handling code here:
         SystemAdmin systemadmin=new SystemAdmin( personHistory,patientHistory);
@@ -347,12 +348,11 @@ PersonDirectory personHistory;
         // TODO add your handling code here:
     }//GEN-LAST:event_medicaltxtpdActionPerformed
 
-    private void backbtnpdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbtnpdActionPerformed
+    private void backbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbtnActionPerformed
         // TODO add your handling code here:
-        SystemAdmin systemadmin=new SystemAdmin( personHistory,patientHistory);
-        systemadmin.setVisible(true);
-
-    }//GEN-LAST:event_backbtnpdActionPerformed
+        SystemAdmin systemAdmin=new SystemAdmin( personHistory, patientHistory);
+            systemAdmin.setVisible(true);
+    }//GEN-LAST:event_backbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -364,7 +364,7 @@ PersonDirectory personHistory;
     private javax.swing.JTextField agetxtpd;
     private javax.swing.JLabel allergieslblpd;
     private javax.swing.JTextField allergiestxtpd;
-    private javax.swing.JButton backbtnpd;
+    private javax.swing.JButton backbtn;
     private javax.swing.JLabel contactnolblpd;
     private javax.swing.JTextField contactnotxtpd;
     private javax.swing.JLabel datelblpd;
@@ -392,4 +392,34 @@ PersonDirectory personHistory;
     private javax.swing.JButton updatebtnpd;
     private javax.swing.JButton viewbtnpd;
     // End of variables declaration//GEN-END:variables
+
+
+private void populateTablePat() {
+        DefaultTableModel model=(DefaultTableModel) patientdirectorytbl.getModel();
+        model.setRowCount(0);
+        
+        for (Patient pa : patientHistory.getPatientHistory())
+        {
+            Object[] col=new Object[12];
+            col[0]= pa;
+            col[1]= pa.getAge();
+            col[2]= pa.getGender();
+            col[3]= pa.getEmailid();
+            col[4]= pa.getContactno();
+            col[5]= pa.getTodaysdate();
+            col[6]= pa.getMaritalstatus();
+            col[7]= pa.getInsurance();
+            col[8]= pa.getAllergies();
+            col[9]= pa.getEmergencycontact();
+            col[10]= pa.getMedicalhistory();
+            col[11]= pa.getSymptoms();
+           
+                   
+            model.addRow(col);
+            
+        }
+}
+
+
+
 }

@@ -74,7 +74,11 @@ public class Person {
         this.confirmpassword = confirmpassword;
     }
     
-  
+  @Override
+    public String toString(){
+        return name;
+    }
+    
       
       
         

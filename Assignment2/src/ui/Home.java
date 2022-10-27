@@ -94,7 +94,7 @@ public class Home extends javax.swing.JFrame {
 
     private void homebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_homebtnActionPerformed
         // TODO add your handling code here:
-        Login login=new Login(personHistory);
+        Login login=new Login(personHistory,patientHistory);
         login.setVisible(true);
     }//GEN-LAST:event_homebtnActionPerformed
 
