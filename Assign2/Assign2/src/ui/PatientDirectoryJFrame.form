@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jScrollPane1" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="namelblpd" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="agelblpd" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="genderlblpd" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="emailidlblpd" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="gendertxtpd" min="-2" pref="71" max="-2" attributes="0"/>
+                              <Component id="agetxtpd" min="-2" pref="71" max="-2" attributes="0"/>
+                              <Component id="nametxtpd" max="32767" attributes="0"/>
+                              <Component id="emailidtxtpd" alignment="0" pref="142" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="contactnolblpd" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="datelblpd" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="maritallblpd" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="insurancelblpd" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="insurancetxtpd" alignment="0" pref="105" max="32767" attributes="0"/>
+                                      <Component id="maritaltxtpd" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="datetxtpd" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="146" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="symptomslblpd" min="-2" max="-2" attributes="0"/>
+                                      <Component id="medicallblpd" min="-2" max="-2" attributes="0"/>
+                                      <Component id="emergencylblpd" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="contactnotxtpd" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                                  <Component id="allergieslblpd" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="allergiestxtpd" max="32767" attributes="0"/>
+                              <Component id="emergencytxtpd" alignment="0" max="32767" attributes="0"/>
+                              <Component id="medicaltxtpd" alignment="0" max="32767" attributes="0"/>
+                              <Component id="symptomstxtpd" alignment="0" pref="143" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="309" max="-2" attributes="0"/>
+                          <Component id="viewbtnpd" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
+                          <Component id="updatebtnpd" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="191" max="32767" attributes="0"/>
+                          <Component id="deletebtnpd" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="227" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  <Component id="backbtnpd" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Component id="backbtnpd" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="238" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="viewbtnpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="updatebtnpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="deletebtnpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="namelblpd" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="nametxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="contactnolblpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="contactnotxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="allergieslblpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="allergiestxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                                  <Component id="agelblpd" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="agetxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="datelblpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="datetxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="emergencylblpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="emergencytxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="genderlblpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="gendertxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="maritallblpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="maritaltxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="medicallblpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="medicaltxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="57" max="32767" attributes="0"/>
+                          <Component id="emailidlblpd" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="-2" pref="303" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="emailidtxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="insurancelblpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="insurancetxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="symptomslblpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="symptomstxtpd" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="41" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="patientdirectorytbl">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                  <Table columnCount="12" rowCount="4">
+                    <Column editable="true" title="Name" type="java.lang.Object"/>
+                    <Column editable="true" title="Age" type="java.lang.Object"/>
+                    <Column editable="true" title="Gender" type="java.lang.Object"/>
+                    <Column editable="true" title="EmailID" type="java.lang.Object"/>
+                    <Column editable="true" title="ContactNo" type="java.lang.Object"/>
+                    <Column editable="true" title="Date" type="java.lang.Object"/>
+                    <Column editable="true" title="Marital Status" type="java.lang.Object"/>
+                    <Column editable="true" title="Insurance" type="java.lang.Object"/>
+                    <Column editable="true" title="Allergies" type="java.lang.Object"/>
+                    <Column editable="true" title="Emergency Contact" type="java.lang.Object"/>
+                    <Column editable="true" title="Medical History" type="java.lang.Object"/>
+                    <Column editable="true" title="Symptoms" type="java.lang.Object"/>
+                  </Table>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JButton" name="viewbtnpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="View"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="viewbtnpdActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="updatebtnpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Update"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="updatebtnpdActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="deletebtnpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Delete"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deletebtnpdActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="namelblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="agelblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Age"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="genderlblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Gender"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="emailidlblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Email-ID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="nametxtpd">
+        </Component>
+        <Component class="javax.swing.JTextField" name="agetxtpd">
+        </Component>
+        <Component class="javax.swing.JTextField" name="gendertxtpd">
+        </Component>
+        <Component class="javax.swing.JTextField" name="emailidtxtpd">
+        </Component>
+        <Component class="javax.swing.JLabel" name="contactnolblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Contact No"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="datelblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Date"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="maritallblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Marital Status"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="insurancelblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Insurance"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="contactnotxtpd">
+        </Component>
+        <Component class="javax.swing.JTextField" name="datetxtpd">
+        </Component>
+        <Component class="javax.swing.JTextField" name="maritaltxtpd">
+        </Component>
+        <Component class="javax.swing.JTextField" name="insurancetxtpd">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="insurancetxtpdActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="allergieslblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Allergies"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="emergencylblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Emergency Contact"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="medicallblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Medical History"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="symptomslblpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Symptoms"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="allergiestxtpd">
+        </Component>
+        <Component class="javax.swing.JTextField" name="emergencytxtpd">
+        </Component>
+        <Component class="javax.swing.JTextField" name="medicaltxtpd">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="medicaltxtpdActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JTextField" name="symptomstxtpd">
+        </Component>
+        <Component class="javax.swing.JButton" name="backbtnpd">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Back"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backbtnpdActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

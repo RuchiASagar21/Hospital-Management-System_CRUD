@@ -1,0 +1,277 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class java.awt.Toolkit
+class java.awt.event.WindowEvent
+class javax.swing.JFrame
+class javax.swing.JOptionPane
+class javax.swing.JPanel
+class javax.swing.table.DefaultTableModel
+class model.City
+class model.CityDirectory
+class model.Community
+class model.CommunityDirectory
+class model.Hospital
+class model.HospitalDir
+class model.HospitalDirDirectory
+class model.HospitalDirectory
+class model.House
+class model.HouseDirectory
+class model.Patient
+class model.PatientDirectory
+class model.Person
+class model.PersonDirectory
+class ui.AppointmentJFrame
+class ui.CityJFrame
+class ui.CityJPanel
+class ui.CitySystemJFrame
+class ui.CommunityJFrame
+class ui.HospitalAdminDJPanel
+class ui.HospitalAdminJFrame
+class ui.HospitalAdminJPanel
+class ui.HospitalSystemJFrame
+class ui.HospitalSystemJPanel
+class ui.HouseJPanel
+class ui.LoginJFrame
+class ui.PatientDirectoryJFrame
+class ui.PatientHouseDetailsJFrame
+class ui.PatientJFrame
+class ui.PatientSearch
+class ui.PersonDirectoryJFrame
+class ui.PersonJFrame
+class ui.SystemJFrame
+class ui.ViewHospitalAdminDJPanel
+class ui.Welcome
+ui.AppointmentJFrame ..> java.lang.SuppressWarnings
+ui.AppointmentJFrame --|> javax.swing.JFrame
+ui.CityJFrame ..> java.lang.SuppressWarnings
+ui.CityJFrame --|> javax.swing.JFrame
+ui.CityJFrame ..> javax.swing.table.DefaultTableModel
+ui.CityJFrame ..> model.City
+ui.CityJFrame ..> model.CityDirectory
+ui.CityJFrame ..> model.CommunityDirectory
+ui.CityJFrame ..> model.HospitalDirDirectory
+ui.CityJFrame ..> model.HospitalDirectory
+ui.CityJFrame ..> model.HouseDirectory
+ui.CityJFrame ..> model.PatientDirectory
+ui.CityJFrame ..> model.PersonDirectory
+ui.CityJPanel ..> java.lang.SuppressWarnings
+ui.CityJPanel --|> javax.swing.JPanel
+ui.CityJPanel ..> javax.swing.table.DefaultTableModel
+ui.CityJPanel ..> model.City
+ui.CityJPanel ..> model.CityDirectory
+ui.CityJPanel ..> model.CommunityDirectory
+ui.CityJPanel ..> model.HospitalDirDirectory
+ui.CityJPanel ..> model.HospitalDirectory
+ui.CityJPanel ..> model.HouseDirectory
+ui.CityJPanel ..> model.PatientDirectory
+ui.CityJPanel ..> model.Person
+ui.CityJPanel ..> model.PersonDirectory
+ui.CitySystemJFrame ..> java.lang.SuppressWarnings
+ui.CitySystemJFrame --|> javax.swing.JFrame
+ui.CitySystemJFrame ..> javax.swing.JOptionPane
+ui.CitySystemJFrame ..> model.City
+ui.CitySystemJFrame ..> model.CityDirectory
+ui.CitySystemJFrame ..> model.CommunityDirectory
+ui.CitySystemJFrame ..> model.HospitalDirDirectory
+ui.CitySystemJFrame ..> model.HospitalDirectory
+ui.CitySystemJFrame ..> model.HouseDirectory
+ui.CitySystemJFrame ..> model.PatientDirectory
+ui.CitySystemJFrame ..> model.Person
+ui.CitySystemJFrame ..> model.PersonDirectory
+ui.CommunityJFrame ..> java.lang.SuppressWarnings
+ui.CommunityJFrame --|> javax.swing.JFrame
+ui.CommunityJFrame ..> model.CityDirectory
+ui.CommunityJFrame ..> model.CommunityDirectory
+ui.CommunityJFrame ..> model.HospitalDirDirectory
+ui.CommunityJFrame ..> model.HospitalDirectory
+ui.CommunityJFrame ..> model.House
+ui.CommunityJFrame ..> model.HouseDirectory
+ui.CommunityJFrame ..> model.PatientDirectory
+ui.CommunityJFrame ..> model.PersonDirectory
+ui.HospitalAdminDJPanel ..> java.lang.SuppressWarnings
+ui.HospitalAdminDJPanel ..> javax.swing.JOptionPane
+ui.HospitalAdminDJPanel --|> javax.swing.JPanel
+ui.HospitalAdminDJPanel ..> model.CityDirectory
+ui.HospitalAdminDJPanel ..> model.CommunityDirectory
+ui.HospitalAdminDJPanel ..> model.HospitalDir
+ui.HospitalAdminDJPanel ..> model.HospitalDirDirectory
+ui.HospitalAdminDJPanel ..> model.HospitalDirectory
+ui.HospitalAdminDJPanel ..> model.HouseDirectory
+ui.HospitalAdminDJPanel ..> model.PatientDirectory
+ui.HospitalAdminDJPanel ..> model.PersonDirectory
+ui.HospitalAdminJFrame ..> java.lang.SuppressWarnings
+ui.HospitalAdminJFrame --|> javax.swing.JFrame
+ui.HospitalAdminJFrame ..> model.CityDirectory
+ui.HospitalAdminJFrame ..> model.CommunityDirectory
+ui.HospitalAdminJFrame ..> model.HospitalDirDirectory
+ui.HospitalAdminJFrame ..> model.HospitalDirectory
+ui.HospitalAdminJFrame ..> model.HouseDirectory
+ui.HospitalAdminJFrame ..> model.PatientDirectory
+ui.HospitalAdminJFrame ..> model.PersonDirectory
+ui.HospitalAdminJPanel ..> java.lang.SuppressWarnings
+ui.HospitalAdminJPanel ..> javax.swing.JOptionPane
+ui.HospitalAdminJPanel --|> javax.swing.JPanel
+ui.HospitalAdminJPanel ..> javax.swing.table.DefaultTableModel
+ui.HospitalAdminJPanel ..> model.CityDirectory
+ui.HospitalAdminJPanel ..> model.Community
+ui.HospitalAdminJPanel ..> model.CommunityDirectory
+ui.HospitalAdminJPanel ..> model.Hospital
+ui.HospitalAdminJPanel ..> model.HospitalDirDirectory
+ui.HospitalAdminJPanel ..> model.HospitalDirectory
+ui.HospitalAdminJPanel ..> model.HouseDirectory
+ui.HospitalAdminJPanel ..> model.PatientDirectory
+ui.HospitalAdminJPanel ..> model.PersonDirectory
+ui.HospitalSystemJFrame ..> java.lang.SuppressWarnings
+ui.HospitalSystemJFrame --|> javax.swing.JFrame
+ui.HospitalSystemJFrame ..> model.CityDirectory
+ui.HospitalSystemJFrame ..> model.CommunityDirectory
+ui.HospitalSystemJFrame ..> model.HospitalDirDirectory
+ui.HospitalSystemJFrame ..> model.HospitalDirectory
+ui.HospitalSystemJFrame ..> model.HouseDirectory
+ui.HospitalSystemJFrame ..> model.PatientDirectory
+ui.HospitalSystemJFrame ..> model.PersonDirectory
+ui.HospitalSystemJPanel ..> java.lang.SuppressWarnings
+ui.HospitalSystemJPanel ..> javax.swing.JOptionPane
+ui.HospitalSystemJPanel --|> javax.swing.JPanel
+ui.HospitalSystemJPanel ..> javax.swing.table.DefaultTableModel
+ui.HospitalSystemJPanel ..> model.CityDirectory
+ui.HospitalSystemJPanel ..> model.CommunityDirectory
+ui.HospitalSystemJPanel ..> model.Hospital
+ui.HospitalSystemJPanel ..> model.HospitalDirDirectory
+ui.HospitalSystemJPanel ..> model.HospitalDirectory
+ui.HospitalSystemJPanel ..> model.HouseDirectory
+ui.HospitalSystemJPanel ..> model.PatientDirectory
+ui.HospitalSystemJPanel ..> model.PersonDirectory
+ui.HouseJPanel ..> java.lang.SuppressWarnings
+ui.HouseJPanel ..> javax.swing.JOptionPane
+ui.HouseJPanel --|> javax.swing.JPanel
+ui.HouseJPanel ..> javax.swing.table.DefaultTableModel
+ui.HouseJPanel ..> model.CityDirectory
+ui.HouseJPanel ..> model.Community
+ui.HouseJPanel ..> model.CommunityDirectory
+ui.HouseJPanel ..> model.HospitalDirDirectory
+ui.HouseJPanel ..> model.HospitalDirectory
+ui.HouseJPanel ..> model.House
+ui.HouseJPanel ..> model.HouseDirectory
+ui.HouseJPanel ..> model.Patient
+ui.HouseJPanel ..> model.PatientDirectory
+ui.HouseJPanel ..> model.PersonDirectory
+ui.LoginJFrame ..> java.lang.SuppressWarnings
+ui.LoginJFrame ..> java.awt.Toolkit
+ui.LoginJFrame ..> java.awt.event.WindowEvent
+ui.LoginJFrame --|> javax.swing.JFrame
+ui.LoginJFrame ..> javax.swing.JOptionPane
+ui.LoginJFrame ..> model.CityDirectory
+ui.LoginJFrame ..> model.CommunityDirectory
+ui.LoginJFrame ..> model.HospitalDirDirectory
+ui.LoginJFrame ..> model.HospitalDirectory
+ui.LoginJFrame ..> model.HouseDirectory
+ui.LoginJFrame ..> model.PatientDirectory
+ui.LoginJFrame ..> model.PersonDirectory
+ui.PatientDirectoryJFrame ..> java.lang.SuppressWarnings
+ui.PatientDirectoryJFrame --|> javax.swing.JFrame
+ui.PatientDirectoryJFrame ..> javax.swing.JOptionPane
+ui.PatientDirectoryJFrame ..> javax.swing.table.DefaultTableModel
+ui.PatientDirectoryJFrame ..> model.CityDirectory
+ui.PatientDirectoryJFrame ..> model.CommunityDirectory
+ui.PatientDirectoryJFrame ..> model.HospitalDirDirectory
+ui.PatientDirectoryJFrame ..> model.HospitalDirectory
+ui.PatientDirectoryJFrame ..> model.HouseDirectory
+ui.PatientDirectoryJFrame ..> model.Patient
+ui.PatientDirectoryJFrame ..> model.PatientDirectory
+ui.PatientDirectoryJFrame ..> model.Person
+ui.PatientDirectoryJFrame ..> model.PersonDirectory
+ui.PatientHouseDetailsJFrame ..> java.lang.SuppressWarnings
+ui.PatientHouseDetailsJFrame --|> javax.swing.JFrame
+ui.PatientHouseDetailsJFrame ..> javax.swing.JOptionPane
+ui.PatientHouseDetailsJFrame ..> model.CityDirectory
+ui.PatientHouseDetailsJFrame ..> model.Community
+ui.PatientHouseDetailsJFrame ..> model.CommunityDirectory
+ui.PatientHouseDetailsJFrame ..> model.HospitalDirDirectory
+ui.PatientHouseDetailsJFrame ..> model.HospitalDirectory
+ui.PatientHouseDetailsJFrame ..> model.House
+ui.PatientHouseDetailsJFrame ..> model.HouseDirectory
+ui.PatientHouseDetailsJFrame ..> model.PatientDirectory
+ui.PatientHouseDetailsJFrame ..> model.PersonDirectory
+ui.PatientJFrame ..> java.lang.SuppressWarnings
+ui.PatientJFrame --|> javax.swing.JFrame
+ui.PatientJFrame ..> javax.swing.JOptionPane
+ui.PatientJFrame ..> model.CityDirectory
+ui.PatientJFrame ..> model.CommunityDirectory
+ui.PatientJFrame ..> model.HospitalDirDirectory
+ui.PatientJFrame ..> model.HospitalDirectory
+ui.PatientJFrame ..> model.HouseDirectory
+ui.PatientJFrame ..> model.Patient
+ui.PatientJFrame ..> model.PatientDirectory
+ui.PatientJFrame ..> model.Person
+ui.PatientJFrame ..> model.PersonDirectory
+ui.PatientSearch ..> java.lang.SuppressWarnings
+ui.PatientSearch --|> javax.swing.JFrame
+ui.PatientSearch ..> javax.swing.JOptionPane
+ui.PatientSearch ..> javax.swing.table.DefaultTableModel
+ui.PatientSearch ..> model.CityDirectory
+ui.PatientSearch ..> model.CommunityDirectory
+ui.PatientSearch ..> model.HospitalDir
+ui.PatientSearch ..> model.HospitalDirDirectory
+ui.PatientSearch ..> model.HospitalDirectory
+ui.PatientSearch ..> model.HouseDirectory
+ui.PatientSearch ..> model.PatientDirectory
+ui.PatientSearch ..> model.Person
+ui.PatientSearch ..> model.PersonDirectory
+ui.PersonDirectoryJFrame ..> java.lang.SuppressWarnings
+ui.PersonDirectoryJFrame --|> javax.swing.JFrame
+ui.PersonDirectoryJFrame ..> javax.swing.JOptionPane
+ui.PersonDirectoryJFrame ..> javax.swing.table.DefaultTableModel
+ui.PersonDirectoryJFrame ..> model.CityDirectory
+ui.PersonDirectoryJFrame ..> model.CommunityDirectory
+ui.PersonDirectoryJFrame ..> model.HospitalDirDirectory
+ui.PersonDirectoryJFrame ..> model.HospitalDirectory
+ui.PersonDirectoryJFrame ..> model.HouseDirectory
+ui.PersonDirectoryJFrame ..> model.PatientDirectory
+ui.PersonDirectoryJFrame ..> model.Person
+ui.PersonDirectoryJFrame ..> model.PersonDirectory
+ui.PersonJFrame ..> java.lang.SuppressWarnings
+ui.PersonJFrame --|> javax.swing.JFrame
+ui.PersonJFrame ..> javax.swing.JOptionPane
+ui.PersonJFrame ..> model.CityDirectory
+ui.PersonJFrame ..> model.CommunityDirectory
+ui.PersonJFrame ..> model.HospitalDirDirectory
+ui.PersonJFrame ..> model.HospitalDirectory
+ui.PersonJFrame ..> model.HouseDirectory
+ui.PersonJFrame ..> model.PatientDirectory
+ui.PersonJFrame ..> model.Person
+ui.PersonJFrame ..> model.PersonDirectory
+ui.SystemJFrame ..> java.lang.SuppressWarnings
+ui.SystemJFrame --|> javax.swing.JFrame
+ui.SystemJFrame ..> model.CityDirectory
+ui.SystemJFrame ..> model.CommunityDirectory
+ui.SystemJFrame ..> model.HospitalDirDirectory
+ui.SystemJFrame ..> model.HospitalDirectory
+ui.SystemJFrame ..> model.HouseDirectory
+ui.SystemJFrame ..> model.PatientDirectory
+ui.SystemJFrame ..> model.PersonDirectory
+ui.ViewHospitalAdminDJPanel ..> java.lang.SuppressWarnings
+ui.ViewHospitalAdminDJPanel ..> javax.swing.JOptionPane
+ui.ViewHospitalAdminDJPanel --|> javax.swing.JPanel
+ui.ViewHospitalAdminDJPanel ..> javax.swing.table.DefaultTableModel
+ui.ViewHospitalAdminDJPanel ..> model.CityDirectory
+ui.ViewHospitalAdminDJPanel ..> model.CommunityDirectory
+ui.ViewHospitalAdminDJPanel ..> model.HospitalDir
+ui.ViewHospitalAdminDJPanel ..> model.HospitalDirDirectory
+ui.ViewHospitalAdminDJPanel ..> model.HospitalDirectory
+ui.ViewHospitalAdminDJPanel ..> model.HouseDirectory
+ui.ViewHospitalAdminDJPanel ..> model.Patient
+ui.ViewHospitalAdminDJPanel ..> model.PatientDirectory
+ui.ViewHospitalAdminDJPanel ..> model.PersonDirectory
+ui.Welcome ..> java.lang.SuppressWarnings
+ui.Welcome ..> java.awt.Toolkit
+ui.Welcome ..> java.awt.event.WindowEvent
+ui.Welcome --|> javax.swing.JFrame
+ui.Welcome ..> model.CityDirectory
+ui.Welcome ..> model.CommunityDirectory
+ui.Welcome ..> model.HospitalDirDirectory
+ui.Welcome ..> model.HospitalDirectory
+ui.Welcome ..> model.HouseDirectory
+ui.Welcome ..> model.PatientDirectory
+ui.Welcome ..> model.PersonDirectory
+@enduml

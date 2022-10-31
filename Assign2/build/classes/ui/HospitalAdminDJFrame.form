@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="backbtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="307" max="-2" attributes="0"/>
+                          <Component id="submitcdocbtn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="nextbtn" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="93" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="hosaddresslbl" alignment="1" min="-2" pref="103" max="-2" attributes="0"/>
+                              <Component id="hosnamelbl" alignment="1" min="-2" pref="103" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="hosname" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
+                              <Component id="hosaddress" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="namecdoclbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="emailidcdoclbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="contactnocdoclbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="contactnocdoctxt" alignment="0" pref="135" max="32767" attributes="0"/>
+                                  <Component id="emailidcdoctxt" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="gendercdoctxt" alignment="0" min="-2" pref="135" max="-2" attributes="0"/>
+                              <Component id="gendercdoclbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="namecdoctxt" alignment="0" min="-2" pref="135" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="176" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="zipcodelbl" alignment="1" min="-2" pref="103" max="-2" attributes="0"/>
+                                      <Component id="degreecdoctxt" alignment="1" min="-2" pref="131" max="-2" attributes="0"/>
+                                      <Component id="citylbl" alignment="1" min="-2" pref="103" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="zipcode" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
+                                      <Component id="city" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="degreecdoclbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="experiencecdoclbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="availabilitycdoctxt" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
+                              <Component id="experiencecdoctxt" alignment="0" min="-2" pref="173" max="-2" attributes="0"/>
+                              <Component id="specialitycdoctxt" alignment="0" min="-2" pref="160" max="-2" attributes="0"/>
+                              <Component id="specialitycdoclbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="availabilitycdoclbl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="145" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="hosname" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="hosnamelbl" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="zipcodelbl" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="zipcode" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="hosaddress" alignment="1" min="-2" pref="17" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="citylbl" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="hosaddresslbl" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="city" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="degreecdoclbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="namecdoclbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="degreecdoctxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="namecdoctxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="specialitycdoclbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="gendercdoclbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="gendercdoctxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="specialitycdoctxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="experiencecdoclbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="emailidcdoclbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="emailidcdoctxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="experiencecdoctxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="73" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="contactnocdoclbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="availabilitycdoclbl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="availabilitycdoctxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="contactnocdoctxt" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="nextbtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="backbtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="submitcdocbtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="contactnocdoclbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Contact No"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="experiencecdoctxt">
+        </Component>
+        <Component class="javax.swing.JLabel" name="specialitycdoclbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Speciality"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="submitcdocbtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Submit"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="submitcdocbtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="emailidcdoclbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Email ID"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="experiencecdoclbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Experience"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="gendercdoclbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Gender"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="namecdoctxt">
+        </Component>
+        <Component class="javax.swing.JTextField" name="gendercdoctxt">
+        </Component>
+        <Component class="javax.swing.JTextField" name="emailidcdoctxt">
+        </Component>
+        <Component class="javax.swing.JTextField" name="contactnocdoctxt">
+        </Component>
+        <Component class="javax.swing.JLabel" name="namecdoclbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Doctor Name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="degreecdoctxt">
+        </Component>
+        <Component class="javax.swing.JLabel" name="degreecdoclbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Degree"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="specialitycdoctxt">
+        </Component>
+        <Component class="javax.swing.JLabel" name="availabilitycdoclbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Availability"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="availabilitycdoctxt">
+        </Component>
+        <Component class="javax.swing.JLabel" name="hosnamelbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Hospital name"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="hosaddresslbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Hospital Address"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="zipcodelbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="ZipCode"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="citylbl">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="City"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="hosname">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="hosaddress">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="city">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="zipcode">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="nextbtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&gt;&gt;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nextbtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="backbtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&lt;&lt;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backbtnActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
